@@ -190,7 +190,7 @@ describe("nodeDefaults utilities", () => {
         useGoogleSearch: true,
       };
       localStorageMock.setItem(
-        "node-banana-nanoBanana-defaults",
+        "bigbox-studio-generate-defaults",
         JSON.stringify(customSettings)
       );
 
@@ -211,7 +211,7 @@ describe("nodeDefaults utilities", () => {
         },
       };
       localStorageMock.setItem(
-        "node-banana-node-defaults",
+        "bigbox-studio-node-defaults",
         JSON.stringify(nodeDefaultsConfig)
       );
 
@@ -233,7 +233,7 @@ describe("nodeDefaults utilities", () => {
         },
       };
       localStorageMock.setItem(
-        "node-banana-node-defaults",
+        "bigbox-studio-node-defaults",
         JSON.stringify(nodeDefaultsConfig)
       );
 
@@ -262,7 +262,7 @@ describe("nodeDefaults utilities", () => {
         },
       };
       localStorageMock.setItem(
-        "node-banana-node-defaults",
+        "bigbox-studio-node-defaults",
         JSON.stringify(nodeDefaultsConfig)
       );
 
@@ -290,7 +290,7 @@ describe("nodeDefaults utilities", () => {
         },
       };
       localStorageMock.setItem(
-        "node-banana-node-defaults",
+        "bigbox-studio-node-defaults",
         JSON.stringify(nodeDefaultsConfig)
       );
 

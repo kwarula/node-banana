@@ -1,5 +1,5 @@
 /**
- * Centralized logging utility for Node Banana
+ * Centralized logging utility for Big Box Studio
  *
  * Features:
  * - Session-based logging (one log file per workflow execution)

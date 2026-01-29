@@ -68,26 +68,18 @@ describe("Header", () => {
   describe("Basic Rendering", () => {
     it("should render the app title", () => {
       render(<Header />);
-      expect(screen.getByText("Node Banana")).toBeInTheDocument();
+      expect(screen.getByText("Big Box Studio")).toBeInTheDocument();
     });
 
-    it("should render the banana icon", () => {
+    it("should render the Big Box Creative logo mark", () => {
       render(<Header />);
-      const icon = screen.getByAltText("Banana");
-      expect(icon).toBeInTheDocument();
-      expect(icon).toHaveAttribute("src", "/banana_icon.png");
+      expect(screen.getByText("BB")).toBeInTheDocument();
     });
 
-    it("should render 'Made by Willie' link", () => {
+    it("should render 'Big Box Creative' link", () => {
       render(<Header />);
-      const link = screen.getByText("Made by Willie");
-      expect(link).toHaveAttribute("href", "https://x.com/ReflctWillie");
-    });
-
-    it("should render Discord support link", () => {
-      render(<Header />);
-      const link = screen.getByTitle("Support");
-      expect(link).toHaveAttribute("href", "https://discord.com/invite/89Nr6EKkTf");
+      const link = screen.getByText("Big Box Creative");
+      expect(link).toHaveAttribute("href", "https://bigboxcreative.africa");
     });
   });
 

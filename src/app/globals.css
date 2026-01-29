@@ -9,7 +9,7 @@
   --foreground: #fafafa;
   /* Handle colors (used by labels) */
   --handle-color-image: #10b981;
-  --handle-color-text: #3b82f6;
+  --handle-color-text: #f59e0b;
 }
 
 html {
@@ -82,9 +82,9 @@ body {
   background: #10b981;
 }
 
-/* Text handles - soft blue */
+/* Text handles - warm amber */
 .react-flow__handle[data-handletype="text"] {
-  background: #3b82f6;
+  background: #f59e0b;
 }
 
 .react-flow__edge-path {
@@ -96,7 +96,7 @@ body {
 
 .react-flow__edge.selected .react-flow__edge-path,
 .react-flow__edge:hover .react-flow__edge-path {
-  stroke: #3b82f6;
+  stroke: #f59e0b;
 }
 
 /* Hide resize handles but show resize cursor on edges */
