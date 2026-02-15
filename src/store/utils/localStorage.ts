@@ -10,12 +10,12 @@ import {
 } from "@/types";
 
 // Storage keys
-export const STORAGE_KEY = "node-banana-workflow-configs";
-export const COST_DATA_STORAGE_KEY = "node-banana-workflow-costs";
-export const GENERATE_IMAGE_DEFAULTS_KEY = "node-banana-nanoBanana-defaults";
-export const PROVIDER_SETTINGS_KEY = "node-banana-provider-settings";
-export const RECENT_MODELS_KEY = "node-banana-recent-models";
-export const NODE_DEFAULTS_KEY = "node-banana-node-defaults";
+export const STORAGE_KEY = "bigbox-workflow-configs";
+export const COST_DATA_STORAGE_KEY = "bigbox-workflow-costs";
+export const GENERATE_IMAGE_DEFAULTS_KEY = "bigbox-nanoBanana-defaults";
+export const PROVIDER_SETTINGS_KEY = "bigbox-provider-settings";
+export const RECENT_MODELS_KEY = "bigbox-recent-models";
+export const NODE_DEFAULTS_KEY = "bigbox-node-defaults";
 
 // Maximum recent models to store (show 4 in UI, keep 8 for persistence)
 export const MAX_RECENT_MODELS = 8;

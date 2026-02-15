@@ -356,12 +356,12 @@ export function VideoStitchNode({ id, data, selected }: NodeProps<VideoStitchNod
             Your browser doesn't support video encoding.
           </span>
           <a
-            href="https://discord.gg/placeholder"
+            href="mailto:info@bigboxcreative.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[10px] text-blue-400 hover:text-blue-300 underline"
+            className="text-blue-400 hover:text-blue-300 underline"
           >
-            Doesn't seem right? Message Willie on Discord.
+            Doesn't seem right? Contact Big Box Creative.
           </a>
         </div>
       </BaseNode>
@@ -450,13 +450,12 @@ export function VideoStitchNode({ id, data, selected }: NodeProps<VideoStitchNod
                       onPointerDown={(e) => handlePointerDown(e, clip.edgeId)}
                       onPointerMove={handlePointerMove}
                       onPointerUp={handlePointerUp}
-                      className={`nodrag relative w-full aspect-video bg-neutral-800 border rounded cursor-move transition-colors group ${
-                        draggedClipId === clip.edgeId
+                      className={`nodrag relative w-full aspect-video bg-neutral-800 border rounded cursor-move transition-colors group ${draggedClipId === clip.edgeId
                           ? "opacity-50 border-blue-500"
                           : hoverClipId === clip.edgeId && draggedClipId
                             ? "border-blue-400 ring-1 ring-blue-400/50"
                             : "border-neutral-600 hover:border-neutral-500"
-                      }`}
+                        }`}
                     >
                       {thumbnail ? (
                         <img
@@ -574,11 +573,10 @@ export function VideoStitchNode({ id, data, selected }: NodeProps<VideoStitchNod
                 <button
                   key={count}
                   onClick={() => updateNodeData(id, { loopCount: count })}
-                  className={`nodrag px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${
-                    (nodeData.loopCount || 1) === count
+                  className={`nodrag px-1.5 py-0.5 rounded text-[10px] font-medium transition-colors ${(nodeData.loopCount || 1) === count
                       ? "bg-blue-600 text-white"
                       : "bg-neutral-700 text-neutral-400 hover:bg-neutral-600 hover:text-neutral-300"
-                  }`}
+                    }`}
                 >
                   {count}x
                 </button>

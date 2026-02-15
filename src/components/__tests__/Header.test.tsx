@@ -68,7 +68,7 @@ describe("Header", () => {
   describe("Basic Rendering", () => {
     it("should render the app title", () => {
       render(<Header />);
-      expect(screen.getByText("Node Banana")).toBeInTheDocument();
+      expect(screen.getByText("Big Box Creative")).toBeInTheDocument();
     });
 
     it("should render the banana icon", () => {
@@ -84,7 +84,7 @@ describe("Header", () => {
       expect(link).toHaveAttribute("href", "https://x.com/ReflctWillie");
     });
 
-    it("should render Discord support link", () => {
+    it("should render Big Box Creative support link", () => {
       render(<Header />);
       const link = screen.getByTitle("Support");
       expect(link).toHaveAttribute("href", "https://discord.com/invite/89Nr6EKkTf");

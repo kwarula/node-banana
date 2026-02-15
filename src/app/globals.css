@@ -2,13 +2,14 @@
 
 @theme {
   --color-canvas-bg: #171717;
+  --color-bigbox-green: #37ff00;
 }
 
 :root {
   --background: #0a0a0a;
   --foreground: #fafafa;
   /* Handle colors (used by labels) */
-  --handle-color-image: #10b981;
+  --handle-color-image: #37ff00;
   --handle-color-text: #3b82f6;
 }
 
@@ -77,9 +78,9 @@ body {
   right: -5px;
 }
 
-/* Image handles - soft green */
+/* Image handles - Big Box Green */
 .react-flow__handle[data-handletype="image"] {
-  background: #10b981;
+  background: #37ff00;
 }
 
 /* Text handles - soft blue */

@@ -317,12 +317,12 @@ export function EaseCurveNode({ id, data, selected }: NodeProps<EaseCurveNodeTyp
             Your browser doesn&apos;t support video encoding.
           </span>
           <a
-            href="https://discord.gg/placeholder"
+            href="mailto:info@bigboxcreative.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[10px] text-blue-400 hover:text-blue-300 underline"
           >
-            Doesn&apos;t seem right? Message Willie on Discord.
+            Doesn't seem right? Contact Big Box Creative.
           </a>
         </div>
       </BaseNode>
@@ -380,21 +380,19 @@ export function EaseCurveNode({ id, data, selected }: NodeProps<EaseCurveNodeTyp
         {/* Tab bar */}
         <div className="flex border-b border-neutral-700">
           <button
-            className={`px-3 py-1.5 text-xs font-medium transition-colors ${
-              activeTab === "editor"
+            className={`px-3 py-1.5 text-xs font-medium transition-colors ${activeTab === "editor"
                 ? "text-lime-300 border-b-2 border-lime-300"
                 : "text-neutral-400 hover:text-neutral-300"
-            }`}
+              }`}
             onClick={() => switchTab("editor")}
           >
             Editor
           </button>
           <button
-            className={`px-3 py-1.5 text-xs font-medium transition-colors ${
-              activeTab === "video"
+            className={`px-3 py-1.5 text-xs font-medium transition-colors ${activeTab === "video"
                 ? "text-lime-300 border-b-2 border-lime-300"
                 : "text-neutral-400 hover:text-neutral-300"
-            }`}
+              }`}
             onClick={() => switchTab("video")}
           >
             Video
@@ -561,11 +559,10 @@ export function EaseCurveNode({ id, data, selected }: NodeProps<EaseCurveNodeTyp
                 return (
                   <button
                     key={name}
-                    className={`flex flex-col items-center gap-0.5 p-1 rounded transition-colors ${
-                      isActive
+                    className={`flex flex-col items-center gap-0.5 p-1 rounded transition-colors ${isActive
                         ? "bg-lime-300/20 border border-lime-300/40"
                         : "hover:bg-neutral-700 border border-transparent"
-                    }`}
+                      }`}
                     onClick={() => handleSelectPreset(name)}
                     title={name}
                   >
@@ -603,11 +600,10 @@ export function EaseCurveNode({ id, data, selected }: NodeProps<EaseCurveNodeTyp
                 return (
                   <button
                     key={name}
-                    className={`flex flex-col items-center gap-0.5 p-1 rounded transition-colors ${
-                      isActive
+                    className={`flex flex-col items-center gap-0.5 p-1 rounded transition-colors ${isActive
                         ? "bg-lime-300/20 border border-lime-300/40"
                         : "hover:bg-neutral-700 border border-transparent"
-                    }`}
+                      }`}
                     onClick={() => handleSelectEasing(name)}
                     title={name}
                   >

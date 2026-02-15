@@ -17,7 +17,7 @@ describe("QuickstartInitialView", () => {
   });
 
   describe("Basic Rendering", () => {
-    it("should render the Node Banana title and logo", () => {
+    it("should render the Big Box Creative title and logo", () => {
       render(
         <QuickstartInitialView
           onNewProject={mockOnNewProject}
@@ -27,7 +27,7 @@ describe("QuickstartInitialView", () => {
         />
       );
 
-      expect(screen.getByText("Node Banana")).toBeInTheDocument();
+      expect(screen.getByText("Big Box Creative")).toBeInTheDocument();
       expect(screen.getByAltText("")).toBeInTheDocument(); // Logo image
     });
 
@@ -174,7 +174,7 @@ describe("QuickstartInitialView", () => {
   });
 
   describe("External Links", () => {
-    it("should render Discord link with correct URL", () => {
+    it("should render Contact link with correct URL", () => {
       render(
         <QuickstartInitialView
           onNewProject={mockOnNewProject}
@@ -184,7 +184,7 @@ describe("QuickstartInitialView", () => {
         />
       );
 
-      const discordLink = screen.getByText("Discord").closest("a");
+      const contactLink = screen.getByText("Contact").closest("a");
       expect(discordLink).toHaveAttribute(
         "href",
         "https://discord.com/invite/89Nr6EKkTf"

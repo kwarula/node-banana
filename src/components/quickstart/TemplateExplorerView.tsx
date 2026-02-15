@@ -330,10 +330,9 @@ export function TemplateExplorerView({
                   onClick={() => setCategoryFilter(option.id)}
                   className={`
                     px-3 py-1.5 text-xs font-medium rounded-md text-left transition-colors
-                    ${
-                      categoryFilter === option.id
-                        ? "bg-blue-500/20 border border-blue-500/50 text-blue-300"
-                        : "bg-neutral-700/30 border border-transparent text-neutral-400 hover:bg-neutral-700/50 hover:text-neutral-300"
+                    ${categoryFilter === option.id
+                      ? "bg-blue-500/20 border border-blue-500/50 text-blue-300"
+                      : "bg-neutral-700/30 border border-transparent text-neutral-400 hover:bg-neutral-700/50 hover:text-neutral-300"
                     }
                   `}
                 >
@@ -355,10 +354,9 @@ export function TemplateExplorerView({
                   onClick={() => toggleTag(tag)}
                   className={`
                     px-3 py-1.5 text-xs font-medium rounded-md text-left transition-colors
-                    ${
-                      selectedTags.has(tag)
-                        ? "bg-blue-500/20 border border-blue-500/50 text-blue-300"
-                        : "bg-neutral-700/30 border border-transparent text-neutral-400 hover:bg-neutral-700/50 hover:text-neutral-300"
+                    ${selectedTags.has(tag)
+                      ? "bg-blue-500/20 border border-blue-500/50 text-blue-300"
+                      : "bg-neutral-700/30 border border-transparent text-neutral-400 hover:bg-neutral-700/50 hover:text-neutral-300"
                     }
                   `}
                 >
@@ -493,16 +491,13 @@ export function TemplateExplorerView({
                 </div>
               )}
 
-              {/* Discord CTA */}
               <p className="text-xs text-neutral-500 mt-3">
                 Want to share your workflow?{" "}
                 <a
-                  href="https://discord.com/invite/89Nr6EKkTf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:info@bigboxcreative.com"
                   className="text-purple-400 hover:text-purple-300 underline"
                 >
-                  Join our Discord
+                  Contact Big Box Creative
                 </a>{" "}
                 to submit it to the community templates.
               </p>

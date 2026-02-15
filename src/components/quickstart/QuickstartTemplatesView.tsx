@@ -142,10 +142,9 @@ export function QuickstartTemplatesView({
                 disabled={isLoading}
                 className={`
                   group flex items-center gap-2.5 px-3 py-2.5 rounded-lg border transition-all text-left
-                  ${
-                    loadingWorkflowId === preset.id
-                      ? "bg-blue-600/20 border-blue-500/50"
-                      : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-600 hover:bg-neutral-800"
+                  ${loadingWorkflowId === preset.id
+                    ? "bg-blue-600/20 border-blue-500/50"
+                    : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-600 hover:bg-neutral-800"
                   }
                   ${isLoading && loadingWorkflowId !== preset.id ? "opacity-50" : ""}
                   ${isLoading ? "cursor-not-allowed" : "cursor-pointer"}
@@ -154,10 +153,9 @@ export function QuickstartTemplatesView({
                 <div
                   className={`
                     w-8 h-8 rounded-md flex items-center justify-center flex-shrink-0
-                    ${
-                      loadingWorkflowId === preset.id
-                        ? "bg-blue-500/30"
-                        : "bg-neutral-700/50 group-hover:bg-neutral-700"
+                    ${loadingWorkflowId === preset.id
+                      ? "bg-blue-500/30"
+                      : "bg-neutral-700/50 group-hover:bg-neutral-700"
                     }
                   `}
                 >
@@ -254,10 +252,9 @@ export function QuickstartTemplatesView({
                   disabled={isLoading}
                   className={`
                     group flex items-center gap-2.5 px-3 py-2.5 rounded-lg border transition-all text-left
-                    ${
-                      loadingWorkflowId === workflow.id
-                        ? "bg-purple-600/20 border-purple-500/50"
-                        : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-600 hover:bg-neutral-800"
+                    ${loadingWorkflowId === workflow.id
+                      ? "bg-purple-600/20 border-purple-500/50"
+                      : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-600 hover:bg-neutral-800"
                     }
                     ${isLoading && loadingWorkflowId !== workflow.id ? "opacity-50" : ""}
                     ${isLoading ? "cursor-not-allowed" : "cursor-pointer"}
@@ -266,10 +263,9 @@ export function QuickstartTemplatesView({
                   <div
                     className={`
                       w-8 h-8 rounded-md flex items-center justify-center flex-shrink-0
-                      ${
-                        loadingWorkflowId === workflow.id
-                          ? "bg-purple-500/30"
-                          : "bg-neutral-700/50 group-hover:bg-neutral-700"
+                      ${loadingWorkflowId === workflow.id
+                        ? "bg-purple-500/30"
+                        : "bg-neutral-700/50 group-hover:bg-neutral-700"
                       }
                     `}
                   >
@@ -326,14 +322,12 @@ export function QuickstartTemplatesView({
           <p className="text-xs text-neutral-500 mt-3">
             Want to share your workflow?{" "}
             <a
-              href="https://discord.com/invite/89Nr6EKkTf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@bigboxcreative.com"
               className="text-purple-400 hover:text-purple-300 underline"
             >
-              Join our Discord
+              Contact Big Box Creative
             </a>{" "}
-            to submit it to the community templates.
+            to submit it to the gallery.
           </p>
         </div>
 
